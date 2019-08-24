@@ -8,6 +8,11 @@ import org.aspectj.lang.annotation.*;
 
 //@Aspect 表明是一个切面类
 
+/**
+* JoinPoint --> ProceedingJoinPoint 这个子类为环绕通知提供一个方法 proceed（） 
+*/
+
+
 @Slf4j
 @Aspect
 public class LogAspect {
