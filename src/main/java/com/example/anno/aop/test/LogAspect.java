@@ -53,6 +53,9 @@ public class LogAspect {
 
     @AfterThrowing(value = "pointCut()",throwing = "exception")
     public void logException(Exception exception){
-        log.error("======切面返异常信息："+exception.getMessage());
+        log.error("======切面返异常信息："+exception.getMessage());  
+        StringWriter writer = new SstringWriter();
+        e.printStackTrace(new PrintWriter(writer))
+        
     }
 }
